@@ -43,8 +43,9 @@ swordGroup=new Group();
 function draw() {
 
   if(gameState===PLAY){
-  background(0);
+  background("red");
   boy.x = World.mouseX;
+  
   
   edges= createEdgeSprites();
   boy.collide(edges);
@@ -95,8 +96,10 @@ function draw() {
   
   drawSprites();
   textSize(20);
+  fill("yellow");
+  text("Collect The Treasures",120,20);
   fill(255);
-  text("Treasure: "+ treasureCollection,150,30);
+  text("Treasure: "+ treasureCollection,150,50);
   }
 
 }
